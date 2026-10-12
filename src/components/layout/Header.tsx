@@ -12,6 +12,7 @@ import {
   Phone,
   PackageCheck,
 } from 'lucide-react';
+import { PWAInstallButton } from '../common/PWAInstallButton';
 
 interface HeaderProps {
   onToggleSidebar: () => void;
@@ -177,6 +178,9 @@ export const Header: React.FC<HeaderProps> = ({ onToggleSidebar }) => {
             {todayCount} {todayCount === 1 ? 'cita' : 'citas'}
           </span>
         </div>
+
+        {/* PWA Install Button */}
+        <PWAInstallButton compact />
 
         {/* Primary CTA */}
         <button

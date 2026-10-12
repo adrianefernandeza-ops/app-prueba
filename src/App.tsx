@@ -16,6 +16,7 @@ import { AppointmentDetailsModal } from './components/modals/AppointmentDetailsM
 import { ClientDetailModal } from './components/clients/ClientDetailModal';
 import { ToastContainer } from './components/common/ToastContainer';
 import { ConfirmDialog } from './components/common/ConfirmDialog';
+import { OfflineIndicator } from './components/common/OfflineIndicator';
 
 const DashboardContent: React.FC = () => {
   const { activeTab } = useApp();
@@ -51,6 +52,7 @@ const DashboardContent: React.FC = () => {
       <ClientDetailModal />
       <ConfirmDialog />
       <ToastContainer />
+      <OfflineIndicator />
     </div>
   );
 };

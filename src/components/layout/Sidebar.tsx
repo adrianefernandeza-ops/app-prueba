@@ -13,6 +13,7 @@ import {
   UserCheck,
   ChevronRight,
 } from 'lucide-react';
+import { PWAInstallButton } from '../common/PWAInstallButton';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -175,7 +176,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         </div>
 
         {/* Bottom reception profile & business indicator */}
-        <div className="p-4 border-t border-slate-800/80 bg-slate-950/40">
+        <div className="p-4 border-t border-slate-800/80 bg-slate-950/40 space-y-3">
+          <PWAInstallButton />
+
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-xs font-bold text-indigo-400">
               RX

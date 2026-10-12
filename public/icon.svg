@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="128" fill="#4f46e5"/>
+  <rect x="96" y="112" width="320" height="304" rx="36" fill="#ffffff"/>
+  <path d="M96 112H416V192H96V112Z" fill="#6366f1"/>
+  <!-- Binder rings -->
+  <rect x="160" y="80" width="32" height="64" rx="16" fill="#312e81"/>
+  <rect x="320" y="80" width="32" height="64" rx="16" fill="#312e81"/>
+  <!-- Calendar grid icons -->
+  <rect x="144" y="232" width="48" height="40" rx="8" fill="#4f46e5"/>
+  <rect x="232" y="232" width="48" height="40" rx="8" fill="#10b981"/>
+  <rect x="320" y="232" width="48" height="40" rx="8" fill="#f59e0b"/>
+  <rect x="144" y="304" width="48" height="40" rx="8" fill="#ec4899"/>
+  <rect x="232" y="304" width="48" height="40" rx="8" fill="#4f46e5"/>
+  <rect x="320" y="304" width="48" height="40" rx="8" fill="#10b981"/>
+</svg>
