@@ -1,0 +1,6 @@
+{
+  "name": "AgendaPro Recepción",
+  "description": "Sistema interno de agenda, control de citas y gestión de paquetes multisesión para recepción y secretaría.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
