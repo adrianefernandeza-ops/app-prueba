@@ -2,9 +2,11 @@ const CACHE_NAME = 'agendapro-pwa-v1';
 const PRECACHE_ASSETS = [
   '/',
   '/index.html',
+  '/offline.html',
   '/manifest.json',
   '/pwa-192x192.png',
   '/pwa-512x512.png',
+  '/pwa-maskable-512x512.png',
   '/apple-touch-icon.png',
   '/icon.svg',
   '/favicon.ico',
@@ -54,9 +56,9 @@ self.addEventListener('fetch', (event) => {
           return response;
         })
         .catch(() => {
-          // If offline, return cached page or root
+          // If offline, return cached page, root or offline fallback page
           return caches.match(event.request).then((cached) => {
-            return cached || caches.match('/');
+            return cached || caches.match('/') || caches.match('/offline.html');
           });
         })
     );
